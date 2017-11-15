@@ -1,0 +1,99 @@
+<style>
+.carosuelCard {
+  display:block;
+  margin-right:6em;
+  margin-left:6em;
+  width:38rem;
+  height:18rem;
+  background-color: grey;
+  background: -webkit-linear-gradient(left top, #2e2929, silver); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #2e2929, silver); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #2e2929, silver); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #2e2929, silver); /* Standard syntax */
+  border-radius: 20px;
+  padding: 1em;
+  box-shadow: 10px 5mazepx black;
+}
+</style>
+<div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
+
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+    	<div class="carosuelCard">
+      <h3>Markup Languages</h3>
+      <p>Markup languages is used to label individual parts of the document and help create a discription of the data. The common markup languages used in web development are HTML and XML. HTML is what your browser reads to know what type of tag is being used.</p>
+	      <p><b>The &ltb&gt makes the text bold </b></p>
+	      <p><i>The &lti&gt makes the text italics.</i></p>
+  </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carosuelCard" >
+<h3>Style Sheets</h3>
+<p id="demoColor" >What most people are use to looking at is how the website is displayed on the page. This is done via CSS. This tells your browser how to display certain elements on the page. They can be updated in the browser.</p>
+<div class="form-group">
+<input  style="margin-bottom:5px;width:40px;height:38px;" id="pColor" type="color"> <br>
+<button class='btn' onClick="changeColor()">Change Color</button>
+</div>
+<script>
+function changeColor() {
+	newColor = document.getElementById("pColor").value;
+	document.getElementById('demoColor').style.color = newColor;
+}
+</script>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carosuelCard" style="display:block;margin-right:6em;margin-left:6em;">
+<h3>Client Side Languages </h3>
+<p>These are programming languages that run inside your browser and your computer is doing the processing. You are not gathering information from any other location(usually). The main one is usually javascript.</p>
+<button style="float:right;" class='btn' name="buttonExecute" onClick="eval(document.getElementById('javascriptText').value)" type='button' value='Execute'>Run</button>
+<textarea style="width:80%;height:110px;resize:none;" id='javascriptText' type='text'> </textarea> 
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="carosuelCard" >
+<h3>Server Side languages</h3>
+	<p>These are programming languages that are run on the computer that is sending your computer information. As a user of a website you never run into these languages. These languages are used to do tasks and then send the information to the user </p>
+	<!--Server Information-->
+        </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+
+<!--<p> This will go over the different type of languages that you will encounter when developing software.</p>
+
+<h3>Markup Languages</h3>
+<p>Markup languages is used to label individual parts of the document and help create a discription of the data. The common markup languages used in web development are HTML and XML. HTML is what your browser reads to know what type of tag is being used.</p>
+<ul>
+	<li><b>The &ltb&gt makes the text bold </b></li>
+	<li><i>The &lti&gt makes the text italics.</i></li>
+</ul>
+<h3>Style Sheets</h3>
+<p id="demoColor" >What most people are use to looking at is how the website is displayed on the page. This is done via CSS. This tells your browser how to display certain elements on the page. They can be updated in the browser.</p>
+<input id="pColor" type="color"> <button class='btn' onClick="changeColor()">Change Color</button>
+<script>
+function changeColor() {
+	newColor = document.getElementById("pColor").value;
+	document.getElementById('demoColor').style.color = newColor;
+}
+</script>
+
+<h3>Client Side Languages </h3>
+<p>These are programming languages that run inside your browser and your computer is doing the processing. You are not gathering information from any other location(usually). The main one is usually javascript.</p>
+<input id='javascriptText' type='text'> </input> <button class='btn' name="buttonExecute" onClick="eval(document.getElementById('javascriptText').value)" type='button' value='Execute'>Run</button>
+
+<h3>Server Side languages</h3>
+	<p>These are programming languages that are run on the computer that is sending your computer information. As a user of a website you never run into these languages. These languages are used to do tasks and then send the information to the user </p>
+
